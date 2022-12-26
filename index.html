@@ -1,0 +1,61 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Ramen_Cafe-Home</title>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.11.2/css/all.css">
+    <script src="fn.js"></script>
+    
+<style>
+    .bgimg {
+        background-image: linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)),url("ramenbase.png");
+        background-repeat: no-repeat;
+        background-size: cover;
+        position: relative;
+        background-position: center;
+        height: 100%;
+    }
+    .bgtext {
+        position: absolute;
+        top: 50%;
+        left: 50%;
+        transform: translate(-50%, -50%);
+        font-size: 120px;
+}
+</style>
+</head>
+<body>
+
+    <div class="navbar">
+      <div class="topnav-left">
+        <img id="ronin" src="roninKanji.jpg" width="1" height="1">
+      </div>
+      <div class="topnav-right">
+        <img id="duck" src="shuba.gif" width="1" height="1">
+      </div>
+      <ul>
+        <li><a href="index.html" class="active">Home</a></li>
+        <li><a href="menu.html">Menu</a></li>
+        <li><a href="reservation.html">Reservation</a></li>
+        <li><a href="knowledge.html">Knowledge</a></li>
+        <li><a href="about.html">About Us</a></li>
+    </ul>      
+    </div>
+
+
+    <div class="bgimg">
+        <div class="bgtext">
+            <h4>WELCOME TO...</h4>
+            <h2 data-text="Ramen_Cafe">Ramen_Cafe</h2>
+        </div>
+    </div>
+
+    <div class="footer">&copy;<span id="year"></span>
+    <span> Ramen_Cafe. All rights reserved.</span></div>
+
+        
+</body>
+</html>

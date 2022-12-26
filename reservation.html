@@ -1,0 +1,108 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Ramen_Cafe-Reservation</title>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.11.2/css/all.css">    
+    <script src="fn.js"></script>
+
+<style>
+.bgimg {
+        background-image: linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)),url("woodfloor.jpg");
+        background-repeat: no-repeat;
+        background-size: cover;
+        position: relative;
+        background-position: center;
+        height: 120%;
+    }
+
+form {
+      width: 500px;
+      margin: 0 auto;
+      text-align: center;
+      padding: 20px;
+      border: 1px solid #ccc;
+      border-radius: 4px;
+    }
+input[type="text"], input[type="date"], input[type="number"], input[type="phone"] {
+      width: 100%;
+      padding: 12px 20px;
+      margin: 8px 0;
+      box-sizing: border-box;
+      border: 3px solid #ccc;
+  -webkit-transition: 0.5s;
+  transition: 0.5s;
+  outline: none;
+    }
+
+    input[type=text]:focus, input[type=date]:focus, input[type=number]:focus, input[type=phone]:focus {
+  border: 3px solid #555;}
+input[type="submit"] {
+      width: 100%;
+      background-color: #4CAF50;
+      color: white;
+      padding: 14px 20px;
+      margin: 8px 0;
+      border: none;
+      border-radius: 4px;
+      cursor: pointer;
+    }
+input[type="submit"]:hover {
+      background-color: #45a049;
+    }
+</style>
+</head>
+
+<body>
+    <div class="navbar">
+        <div class="topnav-left">
+          <img id="ronin" src="roninKanji.jpg" width="1" height="1">
+        </div>
+        <div class="topnav-right">
+          <img id="duck" src="shuba.gif" width="1" height="1">
+        </div>
+        <ul>
+          <li><a href="index.html">Home</a></li>
+          <li><a href="menu.html">Menu</a></li>
+          <li><a href="reservation.html" class="active">Reservation</a></li>
+          <li><a href="knowledge.html">Knowledge</a></li>
+          <li><a href="about.html">About Us</a></li>
+        </ul>      
+    </div>
+    
+    <div class="bgimg"><br><br>
+        <form class="box-wrapper3" id="reservation-form">
+            <h1>Make a reservation</h1>
+            <label for="name">Name:</label><br>
+            <input type="text" id="name" placeholder="Name please" name="name"><br>
+
+            <label for="phone">Phone Number:</label><br>
+            <input type="phone" id="phone" placeholder="The numbers !" name="phone"><br>
+
+            <label for="date">Date:</label><br>
+            <input type="date" id="date" name="date"><br>
+
+            <label for="guests">Number of guests:</label><br>
+            <input type="number" id="guests" placeholder="How many ?" name="guests"><br><br>
+
+            <input type="submit" value="Submit">
+            <script src="fn.js"></script>
+          
+            <h1>Psst... Do you love ramen?</h1>
+            <label><input type="radio" name="loveRamen" value="yes" onclick="showDiscount()"> Yes!
+            <input type="radio" name="loveRamen" value="no" onclick="showSadFace()">No?</label><br>
+            <div id="result"></div>
+         
+        </form>
+        
+
+    </div>
+
+    <div class="footer">&copy;<span id="year"></span>
+        <span> Ramen_Cafe. All rights reserved.</span></div>
+
+</body>
+</html>
